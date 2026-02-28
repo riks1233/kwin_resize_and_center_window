@@ -97,4 +97,4 @@ const main = () => {
     }
 }
 
-registerShortcut("CenterActiveWindow", "Center Active Window", null, main);
+registerShortcut("ResizeAndCenterActiveWindow", "Resize And Center Active Window", null, main);
