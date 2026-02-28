@@ -1,19 +1,19 @@
 {
     "KPlugin": {
-        "Name": "Center Active Window",
-        "Description": "Unmaximizes and centers window to 2/3 of the active screen",
+        "Name": "Resize And Center Active Window",
+        "Description": "Unmaximizes, resizes and centers active window to 2/3 of the active screen",
         "Icon": "preferences-system-windows-script-test",
-        
+
         "Authors": [
             {
                 "Email": "a@a.com",
                 "Name": "Bob Ross"
             }
         ],
-        "Id": "kwin_center_window",
+        "Id": "kwin_resize_and_center_window",
         "Version": "1.0",
         "License": "GPLv3",
-        "Website": "https://github.com/riks1233/kwin_center_window"
+        "Website": "https://github.com/riks1233/kwin_resize_and_center_window"
     },
     "X-Plasma-API": "javascript",
     "X-Plasma-MainScript": "code/main.js",
