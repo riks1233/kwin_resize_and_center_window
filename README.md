@@ -1,6 +1,6 @@
 # KWin center active window
 
-A keyboard shortcut for KDE Wayland Plasma 6 Window Management to resize the current active window to 2/3 of the current screen's size and center it on the current screen.
+A keyboard shortcut for KDE Wayland Plasma 6 Window Management to resize the current active window to 2/3 of the current screen's and center it on the current screen. This resizes the window to the 16:9 aspect ratio based on current screen's smallest size (either width or height).
 
 # Installation
 
@@ -15,9 +15,11 @@ A keyboard shortcut for KDE Wayland Plasma 6 Window Management to resize the cur
 - KDE System Settings app -> search and select "Shortcuts" (will be under the Keyboard section) -> Window Management -> configure your desired shortcut for the `Center Active Window` entry.
 - Enjoy!
 
-# Modifying the default 2/3 ratio
+# Modifying the default sizes
 
-- Change the coefficient in the `contents/code/main.js` in "configuration area". Value should be a float in range [0 ... 1].
+- Change the value in the `contents/code/main.js` in "configuration area":
+  - for `coefficient`, the value should be a float in range [0 ... 1].
+  - for width and height aspect ratios choose any numeric values not less than 1.
 - Disable (press apply) and re-enable (press apply) the plugin in KDE System Settings -> Window Management -> KWin Scripts.
 
 # Behavior debugging in specific apps/windows
